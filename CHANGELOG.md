@@ -1,5 +1,3 @@
-## 0.3.0 - Add import snippets for core, router and bootstrap libraries
+## 0.1.0
 
-## 0.2.0 - Add directive snippet
-
-## 0.1.0 - First Release
+- Ports Snippets from [Angular 2 TypeScript Snippets for VS Code](https://github.com/johnpapa/vscode-angular2-snippets) (version `0.4.4`)
