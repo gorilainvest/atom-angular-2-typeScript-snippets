@@ -32,7 +32,7 @@
     'prefix': 'ng2-pipe'
     'body': """
     import { Pipe, PipeTransform } from '@angular/core';
-    
+
     @Pipe({
       name: '${1:name}'
     })
@@ -41,6 +41,15 @@
         return $0;
       }
     }
+    """
+  'Angular Routes':
+    'prefix': 'ng2-routes'
+    'description': 'Angular 2 route config snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/router-decorator.html'
+    'body': """
+    @Routes([
+      { path: '/${1:path}', component: ${2:component} }$3
+    ])
     """
   'Directive - Angular 2 snippet':
     'prefix': 'ng2d'
