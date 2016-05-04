@@ -17,12 +17,15 @@
       ngOnInit() {}
     }
     """
-  'Service - Angular 2 snippet':
-    'prefix': 'ng2s'
+  'Angular Service':
+    'prefix': 'ng2-service'
+    'description': 'Angular 2 service snippet'
     'body': """
+    import { Injectable } from '@angular/core';
+
     @Injectable()
-    export class ${1:Name}Service {
-      constructor() { }
+    export class ${1:name}Service {
+      constructor() { $2 }
     }
     """
   'Pipe - Angular 2 snippet':
