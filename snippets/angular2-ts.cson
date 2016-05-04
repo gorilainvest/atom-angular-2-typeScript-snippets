@@ -51,6 +51,12 @@
       { path: '/${1:path}', component: ${2:component} }$3
     ])
     """
+  'Angular Route Definition':
+    'prefix': 'ng2-route-path'
+    'description': 'Angular 2 route path snippet'
+    'body': """
+      { path: '/${1:path}', component: ${Component} }$0'
+    """
   'Directive - Angular 2 snippet':
     'prefix': 'ng2d'
     'body': """
