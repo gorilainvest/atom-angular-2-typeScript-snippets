@@ -1,4 +1,4 @@
-'.source.html':
+'.text.html':
   'ngClass':
     'prefix': 'ng2-ngClass'
     'description': 'Angular 2 ngClass snippet'
@@ -11,7 +11,7 @@
     'description': 'Angular 2 *ngFor snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/common/NgFor-directive.html'
     'body': """
-    *ngFor="let {1:$item} of ${2:list}""
+    *ngFor="let {1:$item} of ${2:list}"
     """
   'ngIf':
     'prefix': 'ng2-ngIf'
@@ -23,8 +23,9 @@
   'ngModel':
     "prefix": 'ng2-ngModel'
     'description': 'Angular 2 ngModel snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/common/index/NgModel-directive.html'
     'body': """
-    [(ngModel)]="{1:$binding}""
+    [(ngModel)]="{1:$binding}"
     """
   'ngRouterLink':
     'prefix': 'ng2-routerLink'
@@ -38,7 +39,7 @@
     'description': 'Angular 2 ngStyle snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/common/NgStyle-directive.html'
     'body': """
-    [ngStyle]="${1:style}: ${2:expression}}"
+    [ngStyle]="'${1:style}': ${2:expression}"
     """
   'ngSwitch':
     'prefix': 'ng2-ngSwitch'
