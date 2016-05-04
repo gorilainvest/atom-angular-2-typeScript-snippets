@@ -1,25 +1,46 @@
-'.text.html':
-  'ngFor - Angular 2 snippet':
-    'prefix': 'ng2for'
-    'body': """*ngFor="#${1:item} of ${2:list}\""""
-  'ngIf - Angular 2 snippet':
-    'prefix': 'ng2if'
-    'body': """*ngIf="${1:expression}\""""
-  'ngSwitch - Angular 2 snippet':
-    'prefix': 'ng2switch'
-    'body': """
+'.source.ts':
+  "ngClass"
+    "prefix": "ng2-ngClass"
+    "description": "Angular 2 ngClass snippet"
+    "body": """
+    [ngClass]="${1:cssClass}: ${2:expression}"
+    """
+  "ngFor":
+    "prefix": "ng2-ngFor"
+    "description": "Angular 2 *ngFor snippet"
+    "body": """
+    *ngFor="let {1:$item} of ${2:list}""
+    """
+  "ngIf":
+    "prefix": "ng2-ngIf"
+    "description": "Angular 2 *ngIf snippet"
+    "body": """
+    *ngIf="${1:expression}"
+    """
+  "ngModel":
+    "prefix": "ng2-ngModel"
+    "description": "Angular 2 ngModel snippet"
+    "body": """
+    [(ngModel)]="{1:$binding}""
+    """
+  "ngRouterLink":
+    "prefix": "ng2-routerLink"
+    "description": "Angular 2 routerLink snippet"
+    "body": """
+    [routerLink]="${1:routeName}"
+    """
+  "ngStyle":
+    "prefix": "ng2-ngStyle"
+    "description": "Angular 2 ngStyle snippet"
+    "body": """
+    [ngStyle]="${1:style}: ${2:expression}}"
+    """
+  "ngSwitch":
+    "prefix": "ng2-ngSwitch"
+    "description": "Angular 2 ngSwitch snippet"
+    "body": """
     <div [ngSwitch]="${1:conditionExpression}">
-      <template [ngSwitchWhen]="${2:caseExp}">
-
-      </template>
-      <template ngSwitchDefault>
-
-      </template>
+      <div *ngSwitchWhen="${2:expression}">${3:output}</div>
+      <div *ngSwitchDefault>${4:output2}</div>
     </div>
     """
-  'ngClass - Angular 2 snippet':
-    'prefix': 'ng2class'
-    'body': """[ngClass]="{'${1:cssClass}': ${2:expression}}\""""
-  'ngModel - Angular 2 snippet':
-    'prefix': 'ng2model'
-    'body': """[(ngModel)]="${1:binding}\""""
