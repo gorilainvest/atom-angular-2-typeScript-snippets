@@ -57,6 +57,14 @@
     'body': """
       { path: '/${1:path}', component: ${Component} }$0'
     """
+  'Http.get':
+    'prefix': 'ng2-http-get'
+    'description': 'Angular 2 Http.get snippet'
+    'body': """
+    return this.http
+      .get('${1:url}')
+      .map((res: Response) => res.json()$2);
+    """
   'Directive - Angular 2 snippet':
     'prefix': 'ng2d'
     'body': """
