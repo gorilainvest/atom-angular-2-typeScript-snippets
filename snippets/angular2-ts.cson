@@ -87,13 +87,27 @@
       .then(success => console.log(`Bootstrap success`))
       .catch(error => console.log(error));$3
     """
-  'Import bootstrap  - Angular 2 snippet':
-    'prefix': 'ng2_boot'
+  'AppComponent':
+    'prefix': 'ng2-component-root'
+    'description': 'Angular 2 App root component snippet'
     'body': """
-    import { bootstrap } from 'angular2/platform/browser';
-    """
-  'Import router  - Angular 2 snippet':
-    'prefix': 'ng2_router'
-    'body': """
-    import { ${1:members} } from 'angular2/router';
+    import { Component } from '@angular/core';
+    import { HTTP_PROVIDERS } from '@angular/http';
+    import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
+    import 'rxjs/Rx'; // load the full rxjs
+
+    @Component({
+      moduleId: module.id,
+      selector: '${1:selector}',
+      templateUrl: '$1.component.html',
+      directives: [ROUTER_DIRECTIVES],
+      providers: [
+        HTTP_PROVIDERS,
+        ROUTER_PROVIDERS
+      ]
+    })
+    @Router([
+      $2
+    ])
+    export class AppComponent {}
     """
