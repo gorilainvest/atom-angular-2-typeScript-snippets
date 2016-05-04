@@ -73,10 +73,19 @@
         .subscribe(${3:arg} => this.${4:property} = $3});
     $5
     """
-  'Import core  - Angular 2 snippet':
-    'prefix': 'ng2_ng'
+  'Angular Bootstrapping':
+    'prefix': 'ng2-bootstrap'
     'body': """
-    import { ${1:members} } from 'angular2/core';
+    import { enableProdMode } from '@angular/core';
+    import { bootstrap } from '@angular/platform-browser-dynamic';
+
+    import { ${1:AppComponent} } from './${2:name}.component';",
+
+    // enableProdMode();
+
+    bootstrap($1)
+      .then(success => console.log(`Bootstrap success`))
+      .catch(error => console.log(error));$3
     """
   'Import bootstrap  - Angular 2 snippet':
     'prefix': 'ng2_boot'
