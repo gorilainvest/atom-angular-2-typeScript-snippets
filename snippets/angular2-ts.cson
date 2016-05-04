@@ -1,15 +1,22 @@
 '.source.ts':
-  'Component - Angular 2 snippet':
-    'prefix': 'ng2c'
+  'Angular Component':
+    'prefix': 'ng2-component'
+    'description': 'Angular 2 component snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/Component-decorator.html'
     'body': """
-      @Component({
-        selector: '${1:selector}',
-        templateUrl: '${2:url}'
-      })
-      export class ${3:Name}Component {
-        constructor() { }
-      }
-      """
+    import { Component, OnInit } from '@angular/core';
+
+    @Component({
+      moduleId: module.id,
+      selector: '${1:selector}',
+      templateUrl: '$1.component.html',
+    })
+    export class ${3:name}Component implements OnInit {
+      constructor() { $4 }
+
+      ngOnInit() {}
+    }
+    """
   'Service - Angular 2 snippet':
     'prefix': 'ng2s'
     'body': """
