@@ -1,39 +1,31 @@
-Angular 2 Snippets for Atom
-================
+# Angular 2 TypeScript Snippets for Atom
 
-A collection of common Angular 2 snippets for Dart and Typescript 
+This extension for Atom adds snippets for Angular 2 for TypeScript and HTML.
 
-### Imports
-* ng2_ng -> Snippet for importing Angular core library
-* ng2_boot -> Snippet for importing Angular bootstrap library
-* ng2_router -> Snippet for importing Angular router library
+## Usage
+Type part of a snippet, press `enter`, and the snippet unfolds.
 
-### Components
+### TypeScript Snippets
+```typescript
+ng2-component-root  // Angular 2 root App component
+ng2-bootstrap     // Angular 2 bootstraping, for main.ts
+ng2-component     // Angular 2 component
+ng2-pipe          // Angular 2 pipe
+ng2-route-config  // Angular 2 @RouteConfig
+ng2-route-path    // Angular 2 routing path
+ng2-service       // Angular 2 service
+ng2-subscribe     // Angular 2 observable subscription
+```
 
-* n2c -> Creates an Angular 2 component class
+###HTML Snippets
+```html
+ng2-ngClass
+ng2-ngFor
+ng2-ngIf
+ng2-ngModel
+ng2-routerLink
+ng2-ngStyle
+ng2-ngSwitch
+```
 
-### Directive
-
-* ng2d -> Creates an Angular 2 directive class
-
-### Service
-
-* ng2s -> Creates a service class annotated with ´@Injectable()´
-
-
-### Pipe
-
-* ng2p -> Creates an Angular 2 Pipe class
-
-
-### HTML
-
-* ngFor -> Creates a snippet for ngFor directive
-
-* ngIf -> Creates a snippet for ngIf directive
-
-* ngSwitch -> Creates a snippet for ngSwitch directive
-
-* ngClass -> Creates a snippet for ngClass directive.
-
-* ngModel -> Creates a snippet for ngModel directive.
+Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
