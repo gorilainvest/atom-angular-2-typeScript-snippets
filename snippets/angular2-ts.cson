@@ -20,6 +20,7 @@
   'Angular Service':
     'prefix': 'ng2-service'
     'description': 'Angular 2 service snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/index/Injectable-decorator.html'
     'body': """
     import { Injectable } from '@angular/core';
 
@@ -30,6 +31,8 @@
     """
   'Angular Pipe':
     'prefix': 'ng2-pipe'
+    'description': 'Angular 2 pipe snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/guide/pipes.html'
     'body': """
     import { Pipe, PipeTransform } from '@angular/core';
 
@@ -45,7 +48,7 @@
   'Angular Routes':
     'prefix': 'ng2-routes'
     'description': 'Angular 2 route config snippet'
-    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/router-decorator.html'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/router/Route-class.html'
     'body': """
     @Routes([
       { path: '/${1:path}', component: ${2:component} }$3
@@ -54,12 +57,14 @@
   'Angular Route Definition':
     'prefix': 'ng2-route-path'
     'description': 'Angular 2 route path snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/router/Route-class.html'
     'body': """
       { path: '/${1:path}', component: ${Component} }$0'
     """
   'Http.get':
     'prefix': 'ng2-http-get'
     'description': 'Angular 2 Http.get snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/js/latest/guide/server-communication.html'
     'body': """
     return this.http
       .get('${1:url}')
@@ -68,6 +73,7 @@
   'Subscribe':
     'prefix': 'ng2-subsscribe'
     'description': 'Angular 2 observable subscribe snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/guide/server-communication.html'
     'body': """
     this.${1:service}.${2:function}
         .subscribe(${3:arg} => this.${4:property} = $3});
@@ -75,6 +81,8 @@
     """
   'Angular Bootstrapping':
     'prefix': 'ng2-bootstrap'
+    'description': 'Angular bootstrap() snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/platform-browser-dynamic/index/bootstrap-function.html'
     'body': """
     import { enableProdMode } from '@angular/core';
     import { bootstrap } from '@angular/platform-browser-dynamic';
@@ -90,6 +98,7 @@
   'AppComponent':
     'prefix': 'ng2-component-root'
     'description': 'Angular 2 App root component snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/Component-decorator.html'
     'body': """
     import { Component } from '@angular/core';
     import { HTTP_PROVIDERS } from '@angular/http';
