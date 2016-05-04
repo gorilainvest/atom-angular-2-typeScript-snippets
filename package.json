@@ -1,14 +1,14 @@
 {
-  "name": "angular2-snippets",
-  "version": "0.3.0",
-  "description": "Angular 2 snippets for Atom.",
+  "name": "angular-2-typeScript-snippets",
+  "version": "0.0.1",
+  "description": "Angular 2 TypeSctipt Snippets for Atom.",
   "keywords": [
-    "dart",
-    "dartlang",
     "angular2",
-    "typescript"
+    "typescript",
+    "snippets",
+    "productivity"
   ],
-  "repository": "https://github.com/andresaraujo/atom-angular2-snippets",
+  "repository": "https://github.com/GregOnNet/atom-angular-2-typeScript-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
