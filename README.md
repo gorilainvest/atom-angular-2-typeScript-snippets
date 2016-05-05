@@ -31,3 +31,7 @@ ng2-ngSwitch
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
+
+## Known Issues
+
+It seems that you need to have a `tsconfig.json` to get the TypeScript snippets to work.
