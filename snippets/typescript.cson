@@ -59,7 +59,7 @@
     'description': 'Angular 2 route path snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/router/Route-class.html'
     'body': """
-      { path: '/${1:path}', component: ${Component} }$0'
+      { path: '/${1:path}', component: ${2:component} }$3
     """
   'Http.get':
     'prefix': 'ng2-http-get'
