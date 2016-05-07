@@ -108,7 +108,7 @@
     @Component({
       moduleId: module.id,
       selector: '${1:selector}',
-      templateUrl: '$1.component.html',
+      templateUrl: '${2:component-name}.component.html',
       directives: [ROUTER_DIRECTIVES],
       providers: [
         HTTP_PROVIDERS,
@@ -116,7 +116,7 @@
       ]
     })
     @Router([
-      $2
+      $3
     ])
     export class AppComponent {}
     """
