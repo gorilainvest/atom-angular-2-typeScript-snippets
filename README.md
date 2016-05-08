@@ -174,3 +174,11 @@ this.[service-name].[service-function]
 ```javascript
 import 'rxjs/add/operator/map';
 ```
+
+### ng2-ngClass
+
+This snippet inserts the `ngClass` directive.
+
+```html
+<div [ngClass]="cssClass: expression"></div>
+```
