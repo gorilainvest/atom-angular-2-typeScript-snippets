@@ -1,3 +1,7 @@
+## 0.4.2
+
+- Typo fixes
+
 ## 0.4.0
 
 - Documents each snippet
