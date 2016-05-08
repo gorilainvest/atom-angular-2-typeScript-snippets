@@ -35,3 +35,51 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 ## Known Issues
 
 It seems that you need to have a `tsconfig.json` to get the TypeScript snippets to work.
+
+## Snippets in Detail
+
+### ng2-component-root
+
+`ng2-component-root` gives you a component that you want as entry point for your application.
+It also sets up Routing, the HTTP client and RxJS.
+Per default the RxJs library is referenced.
+
+```javascript
+import { Component } from '@angular/core';
+import { HTTP_PROVIDERS } from '@angular/http';
+import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
+import 'rxjs/Rx'; // load the full rxjs
+
+@Component({
+  moduleId: module.id,
+  selector: '[type-your-selector]',
+  templateUrl: '[type-template-name].component.html',
+  directives: [ROUTER_DIRECTIVES],
+  providers: [
+    HTTP_PROVIDERS,
+    ROUTER_PROVIDERS
+  ]
+})
+@Router([
+
+])
+export class AppComponent {}
+```
+
+### ng2-bootstrap
+
+`ng2-bootstrap` allows you to start your root component to get your app up and running.
+It also prepares `enableProdMode()` for you.
+
+```javascript
+import { enableProdMode } from '@angular/core';
+import { bootstrap } from '@angular/platform-browser-dynamic';
+
+import { [type-component-name] } from './[reference-path-of-module].component';
+
+// enableProdMode();
+
+bootstrap([type-component-name])
+  .then(success => console.log(`Bootstrap success`))
+  .catch(error => console.log(error));
+```
