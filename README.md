@@ -64,7 +64,7 @@ import 'rxjs/Rx'; // load the full rxjs
     ROUTER_PROVIDERS
   ]
 })
-@Router([
+@Routes([
 
 ])
 export class AppComponent {}

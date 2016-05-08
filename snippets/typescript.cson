@@ -115,7 +115,7 @@
         ROUTER_PROVIDERS
       ]
     })
-    @Router([
+    @Routes([
       $3
     ])
     export class AppComponent {}
