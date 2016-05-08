@@ -190,3 +190,11 @@ This snippet inserts the `ngFor` directive.
 ```html
 <div *ngFor="let {1:$item} of list"></div>
 ```
+
+### ng2-ngIf
+
+This snippet inserts the `ngIf` directive.
+
+```html
+<div *ngIf="expression"></div>
+```
