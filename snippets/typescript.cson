@@ -9,7 +9,7 @@
     @Component({
       moduleId: module.id,
       selector: '${1:selector}',
-      templateUrl: '$1.component.html',
+      templateUrl: '${2:component-name}.component.html',
     })
     export class ${3:name}Component implements OnInit {
       constructor() { $4 }
