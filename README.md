@@ -10,15 +10,15 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 |snippet              |explanation                         |
 |---------------------|------------------------------------|
-|`ng2-component-root` |Angular 2 root App component        |
-|`ng2-bootstrap`      |Angular 2 bootstraping, for main.ts |
-|`ng2-component`      |Angular 2 component                 |
-|`ng2-pipe`           |Angular 2 pipe                      |
-|`ng2-routes`         |Angular 2 @Routes                   |
-|`ng2-route-path`     |Angular 2 routing path              |
-|`ng2-service`        |Angular 2 service                   |
-|`ng2-subscribe`      |Angular 2 observable                |
-|`ng2-rx-map`         |RxJs map-operator gets imported     |
+|[ng2-component-root](#ng2-component-root) |Angular 2 root App component        |
+|[ng2-bootstrap](#ng2-bootstrap)      |Angular 2 bootstraping, for main.ts |
+|[ng2-component](#ng2-component)      |Angular 2 component                 |
+|[ng2-pipe](#ng2-pipe)           |Angular 2 pipe                      |
+|[ng2-routes](#ng2-routes)         |Angular 2 @Routes                   |
+|[ng2-route-path](#ng2-route-path)     |Angular 2 routing path              |
+|[ng2-service](#ng2-service)        |Angular 2 service                   |
+|[ng2-subscribe](#ng2-subscribe)      |Angular 2 observable                |
+|[ng2-rx-map](#ng2-rx-map)         |RxJs map-operator gets imported     |
 
 ### HTML Snippets
 
