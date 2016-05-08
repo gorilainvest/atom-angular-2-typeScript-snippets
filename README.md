@@ -198,3 +198,11 @@ This snippet inserts the `ngIf` directive.
 ```html
 <div *ngIf="expression"></div>
 ```
+
+### ng2-ngModel
+
+This snippet inserts the `ngModel` directive.
+
+```html
+<div [(ngModel)]="binding"></div>
+```
