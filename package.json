@@ -1,5 +1,10 @@
 {
   "name": "angular-2-typeScript-snippets",
+  "author": {
+    "name": "Gregor Woiwode",
+    "email": "gregor.woiwode@gmail.com",
+    "url": "https://github.com/gregonnet"
+  },
   "version": "0.3.0",
   "description": "Angular 2 TypeSctipt Snippets for Atom.",
   "keywords": [
