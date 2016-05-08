@@ -107,3 +107,20 @@ export class [type-component-name]Component implements OnInit {
   ngOnInit() {}
 }
 ```
+
+### ng2-pipe
+
+`ng2-pipe` provides a skeleton for a Angular 2 Pipe.
+
+```javascript
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: '[type-pipe-name]'
+})
+export class [type-pipe-name]Pipe implements PipeTransform {
+  transform(value: [type-value-type], args: any[]) : [type-value-type] {
+    return ;
+  }
+}
+```
