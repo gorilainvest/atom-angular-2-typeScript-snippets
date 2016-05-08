@@ -40,7 +40,7 @@
       name: '${1:name}'
     })
     export class ${2:name}Pipe implements PipeTransform {
-      transform(value: ${3:type}, args: any[]) : ${3:type} {
+      transform(value: ${3:type}, args: any[]): ${3:type} {
         return $0;
       }
     }
