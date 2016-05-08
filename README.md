@@ -11,26 +11,26 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |snippet              |explanation                         |
 |---------------------|------------------------------------|
 |[ng2-component-root](#ng2-component-root) |Angular 2 root App component        |
-|[ng2-bootstrap](#ng2-bootstrap)      |Angular 2 bootstraping, for main.ts |
-|[ng2-component](#ng2-component)      |Angular 2 component                 |
-|[ng2-pipe](#ng2-pipe)           |Angular 2 pipe                      |
+|[ng2-bootstrap](#ng2-bootstrap)   |Angular 2 bootstraping, for main.ts |
+|[ng2-component](#ng2-component)   |Angular 2 component                 |
+|[ng2-pipe](#ng2-pipe)             |Angular 2 pipe                      |
 |[ng2-routes](#ng2-routes)         |Angular 2 @Routes                   |
-|[ng2-route-path](#ng2-route-path)     |Angular 2 routing path              |
-|[ng2-service](#ng2-service)        |Angular 2 service                   |
-|[ng2-subscribe](#ng2-subscribe)      |Angular 2 observable                |
+|[ng2-route-path](#ng2-route-path) |Angular 2 routing path              |
+|[ng2-service](#ng2-service)       |Angular 2 service                   |
+|[ng2-subscribe](#ng2-subscribe)   |Angular 2 observable                |
 |[ng2-rx-map](#ng2-rx-map)         |RxJs map-operator gets imported     |
 
 ### HTML Snippets
 
-```html
-ng2-ngClass
-ng2-ngFor
-ng2-ngIf
-ng2-ngModel
-ng2-routerLink
-ng2-ngStyle
-ng2-ngSwitch
-```
+|snippet                          |
+|---------------------------------|
+|[ng2-ngClass](#ng2-ngclass)      |
+|[ng2-ngFor](#ng2-ngfor)          |
+|[ng2-ngIf](#ng2-ngif)            |
+|[ng2-ngModel](#ng2-ngmodel)      |
+|[ng2-routerLink](#ng2-routerlink)|
+|[ng2-ngStyle](#ng2-ngstyle)      |
+|[ng2-ngSwitch](#ng2-ngswitch)    |
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
