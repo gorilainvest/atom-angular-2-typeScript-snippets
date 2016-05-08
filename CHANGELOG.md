@@ -1,3 +1,7 @@
+## 0.4.3
+
+- Doc imporovements
+
 ## 0.4.2
 
 - Typo fixes
