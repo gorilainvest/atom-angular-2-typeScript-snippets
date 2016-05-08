@@ -87,3 +87,23 @@ bootstrap([type-component-name])
   .then(success => console.log(`Bootstrap success`))
   .catch(error => console.log(error));
 ```
+
+### ng2-component
+
+`ng2-component` provides a skeleton for a Angular 2 Component.
+It saves you time typing the mandatory Decorator properties.
+
+```javascript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: '[type-your-selector]',
+  templateUrl: '[type-component-name].component.html',
+})
+export class [type-component-name]Component implements OnInit {
+  constructor() {  }
+
+  ngOnInit() {}
+}
+```
