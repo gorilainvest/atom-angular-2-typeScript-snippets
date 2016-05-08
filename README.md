@@ -206,3 +206,11 @@ This snippet inserts the `ngModel` directive.
 ```html
 <div [(ngModel)]="binding"></div>
 ```
+
+### ng2-routerLink
+
+This snippet inserts the `routerLink` directive.
+
+```html
+<a [routerLink]="routeName"></a>
+```
