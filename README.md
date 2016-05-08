@@ -214,3 +214,11 @@ This snippet inserts the `routerLink` directive.
 ```html
 <a [routerLink]="routeName"></a>
 ```
+
+### ng2-ngStyle
+
+This snippet inserts the `ngStyle` directive.
+
+```html
+<div [ngStyle]="'style': expression"></div>
+```
