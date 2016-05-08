@@ -222,3 +222,14 @@ This snippet inserts the `ngStyle` directive.
 ```html
 <div [ngStyle]="'style': expression"></div>
 ```
+
+### ng2-ngSwitch
+
+This snippet inserts the `ngSwitch` directive.
+
+```html
+<div [ngSwitch]="conditionExpression">
+  <div *ngSwitchWhen="expression">output</div>
+  <div *ngSwitchDefault>output2</div>
+</div>
+```
