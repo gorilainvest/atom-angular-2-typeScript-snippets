@@ -56,8 +56,8 @@ import 'rxjs/Rx'; // load the full rxjs
 
 @Component({
   moduleId: module.id,
-  selector: '[type-your-selector]',
-  templateUrl: '[type-template-name].component.html',
+  selector: '[your-selector]',
+  templateUrl: '[template-name].component.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [
     HTTP_PROVIDERS,
@@ -79,11 +79,11 @@ It also prepares `enableProdMode()` for you.
 import { enableProdMode } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
-import { [type-component-name] } from './[reference-path-of-module].component';
+import { [component-name] } from './[reference-path-of-module].component';
 
 // enableProdMode();
 
-bootstrap([type-component-name])
+bootstrap([component-name])
   .then(success => console.log(`Bootstrap success`))
   .catch(error => console.log(error));
 ```
@@ -98,10 +98,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: '[type-your-selector]',
-  templateUrl: '[type-component-name].component.html',
+  selector: '[your-selector]',
+  templateUrl: '[component-name].component.html',
 })
-export class [type-component-name]Component implements OnInit {
+export class [component-name]Component implements OnInit {
   constructor() {  }
 
   ngOnInit() {}
@@ -116,10 +116,10 @@ export class [type-component-name]Component implements OnInit {
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: '[type-pipe-name]'
+  name: '[pipe-name]'
 })
-export class [type-pipe-name]Pipe implements PipeTransform {
-  transform(value: [type-value-type], args: any[]) : [type-value-type] {
+export class [pipe-name]Pipe implements PipeTransform {
+  transform(value: [value-type], args: any[]) : [value-type] {
     return ;
   }
 }
@@ -131,7 +131,7 @@ export class [type-pipe-name]Pipe implements PipeTransform {
 
 ```javascript
 @Routes([
-  { path: '/[type-route]', component: [type-component-name] }
+  { path: '/[route]', component: [component-name] }
 ])
 ```
 
@@ -141,7 +141,7 @@ export class [type-pipe-name]Pipe implements PipeTransform {
 **Use** this snippet inside the `@Routes` decorator.
 
 ```javascript
-{ path: '/[type-route]', component: [type-component-name] }
+{ path: '/[route]', component: [component-name] }
 ```
 
 ### ng2-service
@@ -152,7 +152,7 @@ export class [type-pipe-name]Pipe implements PipeTransform {
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class [type-service-name]Service {
+export class [service-name]Service {
   constructor() {  }
 }
 ```
@@ -163,6 +163,6 @@ export class [type-service-name]Service {
 The `subscribe` method is also created for you. So you can assign the response quickly.
 
 ```javascript
-this.[type-service-name].[type-service-function]
-    .subscribe([type-response] => this.[type-assign-target] = [type-response]});
+this.[service-name].[service-function]
+    .subscribe([response] => this.[assign-target] = [response]});
 ```
