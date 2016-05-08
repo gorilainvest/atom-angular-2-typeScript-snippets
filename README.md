@@ -3,6 +3,7 @@
 This extension for Atom adds snippets for Angular 2 for TypeScript and HTML.
 
 ## Usage
+
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
@@ -16,6 +17,7 @@ ng2-route-config    // Angular 2 @RouteConfig
 ng2-route-path      // Angular 2 routing path
 ng2-service         // Angular 2 service
 ng2-subscribe       // Angular 2 observable subscription
+ng2-rx-map          // RxJs map-operator gets imported
 ```
 
 ### HTML Snippets
