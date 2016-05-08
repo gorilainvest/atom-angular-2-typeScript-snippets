@@ -166,3 +166,11 @@ The `subscribe` method is also created for you. So you can assign the response q
 this.[service-name].[service-function]
     .subscribe([response] => this.[assign-target] = [response]});
 ```
+
+### ng2-rx-map
+
+`ng2-rx-map` simply creates the import statement to reference the map operator of RxJs.
+
+```javascript
+import 'rxjs/add/operator/map';
+```
