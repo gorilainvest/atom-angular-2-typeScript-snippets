@@ -38,6 +38,8 @@ It seems that you need to have a `tsconfig.json` to get the TypeScript snippets 
 
 ## Snippets in Detail
 
+No one wants to buy a pig in a poke. The following section will show you what the provided snippets actually do for you.
+
 ### ng2-component-root
 
 `ng2-component-root` gives you a component that you want as entry point for your application.
