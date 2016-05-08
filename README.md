@@ -48,7 +48,7 @@ No one wants to buy a pig in a poke. The following section will show you what th
 It also sets up Routing, the HTTP client and RxJS.
 Per default the RxJs library is referenced.
 
-```javascript
+```ts
 import { Component } from '@angular/core';
 import { HTTP_PROVIDERS } from '@angular/http';
 import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
@@ -75,7 +75,7 @@ export class AppComponent {}
 `ng2-bootstrap` allows you to start your root component to get your app up and running.
 It also prepares `enableProdMode()` for you.
 
-```javascript
+```ts
 import { enableProdMode } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
@@ -93,7 +93,7 @@ bootstrap([component-name])
 `ng2-component` provides a skeleton for an Angular 2 Component.
 It saves you time typing the mandatory Decorator properties.
 
-```javascript
+```ts
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -112,7 +112,7 @@ export class [ComponentName]Component implements OnInit {
 
 `ng2-pipe` provides a skeleton for an Angular 2 Pipe.
 
-```javascript
+```ts
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
@@ -129,7 +129,7 @@ export class [PipeName]Pipe implements PipeTransform {
 
 `ng2-routes` creates the `@Routes` decorator with a single route in it.
 
-```javascript
+```ts
 @Routes([
   { path: '/[route]', component: [component-name] }
 ])
@@ -140,7 +140,7 @@ export class [PipeName]Pipe implements PipeTransform {
 `ng2-route-path` adds a single route to `@Routes`.
 **Use** this snippet inside the `@Routes` decorator.
 
-```javascript
+```ts
 { path: '/[route]', component: [component-name] }
 ```
 
@@ -148,7 +148,7 @@ export class [PipeName]Pipe implements PipeTransform {
 
 `ng2-service` provides a skeleton for an Angular 2 Service.
 
-```javascript
+```ts
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -162,7 +162,7 @@ export class [service-name]Service {
 `ng2-subscribe` gives you a shorthand to call a service function, that returns a observable.
 The `subscribe` method is also created for you. So you can assign the response quickly.
 
-```javascript
+```ts
 this.[service-name].[service-function]
     .subscribe([response] => this.[assign-target] = [response]});
 ```
@@ -171,7 +171,7 @@ this.[service-name].[service-function]
 
 `ng2-rx-map` simply creates the import statement to reference the map operator of RxJs.
 
-```javascript
+```ts
 import 'rxjs/add/operator/map';
 ```
 
