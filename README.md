@@ -124,3 +124,13 @@ export class [type-pipe-name]Pipe implements PipeTransform {
   }
 }
 ```
+
+### ng2-routes
+
+`ng2-routes` creates the `@Routes` decorator with a single route in it.
+
+```javascript
+@Routes([
+  { path: '/[type-route]', component: [type-component-name] }
+])
+```
