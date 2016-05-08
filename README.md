@@ -182,3 +182,11 @@ This snippet inserts the `ngClass` directive.
 ```html
 <div [ngClass]="cssClass: expression"></div>
 ```
+
+### ng2-ngFor
+
+This snippet inserts the `ngFor` directive.
+
+```html
+<div *ngFor="let {1:$item} of list"></div>
+```
