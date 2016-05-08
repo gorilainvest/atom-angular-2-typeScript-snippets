@@ -156,3 +156,13 @@ export class [type-service-name]Service {
   constructor() {  }
 }
 ```
+
+### ng2-subscribe
+
+`ng2-subscribe` gives you a shorthand to call a service function, that returns a observable.
+The `subscribe` method is also created for you. So you can assign the response quickly.
+
+```javascript
+this.[type-service-name].[type-service-function]
+    .subscribe([type-response] => this.[type-assign-target] = [type-response]});
+```
