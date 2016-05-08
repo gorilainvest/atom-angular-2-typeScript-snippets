@@ -90,7 +90,7 @@ bootstrap([component-name])
 
 ### ng2-component
 
-`ng2-component` provides a skeleton for a Angular 2 Component.
+`ng2-component` provides a skeleton for an Angular 2 Component.
 It saves you time typing the mandatory Decorator properties.
 
 ```javascript
@@ -101,7 +101,7 @@ import { Component, OnInit } from '@angular/core';
   selector: '[your-selector]',
   templateUrl: '[component-name].component.html',
 })
-export class [component-name]Component implements OnInit {
+export class [ComponentName]Component implements OnInit {
   constructor() {  }
 
   ngOnInit() {}
@@ -110,7 +110,7 @@ export class [component-name]Component implements OnInit {
 
 ### ng2-pipe
 
-`ng2-pipe` provides a skeleton for a Angular 2 Pipe.
+`ng2-pipe` provides a skeleton for an Angular 2 Pipe.
 
 ```javascript
 import { Pipe, PipeTransform } from '@angular/core';
@@ -118,7 +118,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: '[pipe-name]'
 })
-export class [pipe-name]Pipe implements PipeTransform {
+export class [PipeName]Pipe implements PipeTransform {
   transform(value: [value-type], args: any[]) : [value-type] {
     return ;
   }
@@ -146,7 +146,7 @@ export class [pipe-name]Pipe implements PipeTransform {
 
 ### ng2-service
 
-`ng2-service` provides a skeleton for a Angular 2 Service.
+`ng2-service` provides a skeleton for an Angular 2 Service.
 
 ```javascript
 import { Injectable } from '@angular/core';
