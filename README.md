@@ -143,3 +143,16 @@ export class [type-pipe-name]Pipe implements PipeTransform {
 ```javascript
 { path: '/[type-route]', component: [type-component-name] }
 ```
+
+### ng2-service
+
+`ng2-service` provides a skeleton for a Angular 2 Service.
+
+```javascript
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class [type-service-name]Service {
+  constructor() {  }
+}
+```
