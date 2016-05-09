@@ -1,5 +1,9 @@
 ## 0.4.3
 
+- Adds snippet `ng2-directive`
+
+## 0.4.3
+
 - Doc imporovements
 
 ## 0.4.2
