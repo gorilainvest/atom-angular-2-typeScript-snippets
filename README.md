@@ -13,6 +13,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |[ng2-component-root](#ng2-component-root) |Angular 2 root App component        |
 |[ng2-bootstrap](#ng2-bootstrap)   |Angular 2 bootstraping, for main.ts |
 |[ng2-component](#ng2-component)   |Angular 2 component                 |
+|[ng2-directive](#ng2-directive)   |Angular 2 directive                 |
 |[ng2-pipe](#ng2-pipe)             |Angular 2 pipe                      |
 |[ng2-routes](#ng2-routes)         |Angular 2 @Routes                   |
 |[ng2-route-path](#ng2-route-path) |Angular 2 routing path              |
@@ -106,6 +107,17 @@ export class [ComponentName]Component implements OnInit {
 
   ngOnInit() {}
 }
+```
+
+### ng2-directive
+
+`ng2-directive` provides a skeleton for an Angular 2 Attribute or Structural Directive.
+
+```ts
+import { Directive, Input } from '@angular/core';
+
+@Directive({ selector: '[selector]' })
+export class [DirectiveName]Directive { }
 ```
 
 ### ng2-pipe

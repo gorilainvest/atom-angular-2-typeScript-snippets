@@ -17,6 +17,18 @@
       ngOnInit() {}
     }
     """
+  'Angular Directive':
+    'prefix': 'ng2-directive'
+    'description': 'Angular 2 directive snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/guide/structural-directive.html'
+    'body': """
+    import { Directive, Input } from '@angular/core';
+
+    @Directive({ selector: '[${1:selector}]' })
+    export class ${2:DirectiveName}Directive {
+      $3
+    }
+    """
   'Angular Service':
     'prefix': 'ng2-service'
     'description': 'Angular 2 service snippet'
