@@ -17,6 +17,13 @@
       ngOnInit() {}
     }
     """
+  'Import Statement':
+    'prefix': 'ng2-import'
+    'description': 'Imports a Module from another file'
+    'descriptionMoreURL': 'https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html'
+    'body': """
+    import {${2:Module}} from '${1:path-to-source}';$3
+    """
   'Angular Directive':
     'prefix': 'ng2-directive'
     'description': 'Angular 2 directive snippet'
