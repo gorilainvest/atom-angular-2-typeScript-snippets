@@ -1,3 +1,10 @@
+## 0.4.5
+
+- Adds snippet `ng2-import`
+  ```ts
+  import {<Module or Component>} from '<path to component>';
+  ```
+
 ## 0.4.4
 
 - Adds snippet `ng2-directive`
