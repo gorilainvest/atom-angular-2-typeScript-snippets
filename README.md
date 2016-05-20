@@ -8,18 +8,18 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 
-|snippet              |explanation                         |
-|---------------------|------------------------------------|
-|[ng2-component-root](#ng2-component-root) |Angular 2 root App component        |
-|[ng2-bootstrap](#ng2-bootstrap)   |Angular 2 bootstraping, for main.ts |
-|[ng2-component](#ng2-component)   |Angular 2 component                 |
-|[ng2-directive](#ng2-directive)   |Angular 2 directive                 |
-|[ng2-pipe](#ng2-pipe)             |Angular 2 pipe                      |
-|[ng2-routes](#ng2-routes)         |Angular 2 @Routes                   |
-|[ng2-route-path](#ng2-route-path) |Angular 2 routing path              |
-|[ng2-service](#ng2-service)       |Angular 2 service                   |
-|[ng2-subscribe](#ng2-subscribe)   |Angular 2 observable                |
-|[ng2-rx-map](#ng2-rx-map)         |RxJs map-operator gets imported     |
+|snippet|explanation|
+|-------|-----------|
+|[ng2-component-root](#ng2-component-root)|Angular 2 root App component|
+|[ng2-bootstrap](#ng2-bootstrap)          |Angular 2 bootstraping, for main.ts|
+|[ng2-component](#ng2-component)          |Angular 2 component|
+|[ng2-directive](#ng2-directive)          |Angular 2 directive|
+|[ng2-pipe](#ng2-pipe)                    |Angular 2 pipe|
+|[ng2-routes](#ng2-routes)                |Angular 2 @Routes|
+|[ng2-route-path](#ng2-route-path)        |Angular 2 routing path|
+|[ng2-service](#ng2-service)              |Angular 2 service|
+|[ng2-subscribe](#ng2-subscribe)          |Angular 2 observable|
+|[ng2-rx-map](#ng2-rx-map)                |RxJs map-operator gets imported|
 
 ### HTML Snippets
 
@@ -41,7 +41,8 @@ It seems that you need to have a `tsconfig.json` to get the TypeScript snippets 
 
 ## Snippets in Detail
 
-No one wants to buy a pig in a poke. The following section will show you what the provided snippets actually do for you.
+No one wants to buy a pig in a poke.
+The following section will show you what the provided snippets actually do for you.
 
 ### ng2-component-root
 
@@ -107,6 +108,14 @@ export class <ComponentName>Component implements OnInit {
 
   ngOnInit() {}
 }
+```
+
+### ng2-import
+
+`ng2-import` gives you a shorthand writing import-statements.
+
+```ts
+import {<Module or Component>} from '<path to component>';
 ```
 
 ### ng2-directive
