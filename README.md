@@ -29,6 +29,8 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |[ng2-ngFor](#ng2-ngfor)          |
 |[ng2-ngIf](#ng2-ngif)            |
 |[ng2-ngModel](#ng2-ngmodel)      |
+|[ng2-property](#ng2-property)    |
+|[ng2-event](#ng2-event)          |
 |[ng2-routerLink](#ng2-routerlink)|
 |[ng2-ngStyle](#ng2-ngstyle)      |
 |[ng2-ngSwitch](#ng2-ngswitch)    |
@@ -226,6 +228,22 @@ This snippet inserts the `ngModel` directive.
 
 ```html
 <div [(ngModel)]="binding"></div>
+```
+
+### ng2-property
+
+This snippet inserts the skeleton for a property binding directive.
+
+```html
+<div [property]="value"></div>
+```
+
+### ng2-event
+
+This snippet inserts the skeleton for a event binding directive.
+
+```html
+<div (event)="callback()"></div>
 ```
 
 ### ng2-routerLink

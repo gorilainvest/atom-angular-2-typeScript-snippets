@@ -1,3 +1,14 @@
+## 0.4.6
+
+- Adds html snippet `ng2-property`
+  ```html
+  <div [property]="value"></div>
+  ```
+- Adds html snippet `ng2-event`
+  ```html
+  <div (event)="callback()"></div>
+  ```
+
 ## 0.4.5
 
 - Adds snippet `ng2-import`
