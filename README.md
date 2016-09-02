@@ -70,7 +70,6 @@ It saves you time typing the mandatory Decorator properties.
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: '<selector>',
   templateUrl: '<component-name>.component.html',
 })
