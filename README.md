@@ -47,20 +47,16 @@ The following section will show you what the provided snippets actually do for y
 
 ### ng2-bootstrap
 
-`ng2-bootstrap` allows you to start your root component to get your app up and running.
+`ng2-bootstrap` allows you to start your root module to get your app up and running.
 It also prepares `enableProdMode()` for you.
 
 ```ts
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { <module-name> } from './<path-to-module>.module';
 
-import { <component-name> } from './<reference-path-of-module>.component';
-
-// enableProdMode();
-
-bootstrap(<component-name>)
-  .then(success => console.log(`Bootstrap success`))
-  .catch(error => console.log(error));
+//enableProdMode(); //Uncomment for production
+platformBrowserDynamic().bootstrapModule(<module-name>);
 ```
 
 ### ng2-component

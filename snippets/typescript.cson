@@ -102,14 +102,10 @@
     'description': 'Angular bootstraps() snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/platform-browser-dynamic/index/bootstrap-function.html'
     'body': """
+    import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     import { enableProdMode } from '@angular/core';
-    import { bootstraps } from '@angular/platform-browser-dynamic';
+    import { ${1:AppModuleName} } from './${2:path}.module';
 
-    import { ${1:AppComponent} } from './${2:name}.component';
-
-    // enableProdMode();
-
-    bootstrap($1)
-      .then(success => console.log(`Bootstrap success`))
-      .catch(error => console.log(error));$3
+    //enableProdMode(); //Uncomment for production
+    platformBrowserDynamic().bootstrapModule($1);$3
     """
