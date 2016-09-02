@@ -10,7 +10,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 |snippet|explanation|
 |-------|-----------|
-|[ng2-component-root](#ng2-component-root)|Angular 2 root App component|
 |[ng2-bootstrap](#ng2-bootstrap)          |Angular 2 bootstraping, for main.ts|
 |[ng2-component](#ng2-component)          |Angular 2 component|
 |[ng2-directive](#ng2-directive)          |Angular 2 directive|
@@ -45,34 +44,6 @@ It seems that you need to have a `tsconfig.json` to get the TypeScript snippets 
 
 No one wants to buy a pig in a poke.
 The following section will show you what the provided snippets actually do for you.
-
-### ng2-component-root
-
-`ng2-component-root` gives you a component that you want as entry point for your application.
-It also sets up Routing, the HTTP client and RxJS.
-Per default the RxJs library is referenced.
-
-```ts
-import { Component } from '@angular/core';
-import { HTTP_PROVIDERS } from '@angular/http';
-import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
-import 'rxjs/Rx'; // load the full rxjs
-
-@Component({
-  moduleId: module.id,
-  selector: '<selector>',
-  templateUrl: '<template-name>.component.html',
-  directives: [ROUTER_DIRECTIVES],
-  providers: [
-    HTTP_PROVIDERS,
-    ROUTER_PROVIDERS
-  ]
-})
-@Routes([
-
-])
-export class AppComponent {}
-```
 
 ### ng2-bootstrap
 

@@ -113,27 +113,3 @@
       .then(success => console.log(`Bootstrap success`))
       .catch(error => console.log(error));$3
     """
-  'AppComponent':
-    'prefix': 'ng2-component-root'
-    'description': 'Angular 2 App root component snippet'
-    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/Component-decorator.html'
-    'body': """
-    import { Component } from '@angular/core';
-    import { HTTP_PROVIDERS } from '@angular/http';
-    import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
-    import 'rxjs/Rx'; // load the full rxjs
-
-    @Component({
-      selector: '${1:selector}',
-      templateUrl: '${2:component-name}.component.html',
-      directives: [ROUTER_DIRECTIVES],
-      providers: [
-        HTTP_PROVIDERS,
-        ROUTER_PROVIDERS
-      ]
-    })
-    @Routes([
-      $3
-    ])
-    export class AppComponent {}
-    """
