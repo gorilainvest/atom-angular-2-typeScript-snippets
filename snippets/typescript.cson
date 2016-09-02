@@ -16,6 +16,20 @@
       ngOnInit() {}
     }
     """
+  'Angular @Input':
+    'prefix': 'ng2-input'
+    'description': 'Angular 2 input snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/index/Input-var.html'
+    'body': """
+    @Input() ${1:property}: ${2:type};$3
+    """
+  'Angular @Output':
+    'prefix': 'ng2-output'
+    'description': 'Angular 2 output snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/core/index/Output-var.html'
+    'body': """
+    @Output() ${1:event}: EventEmitter<${2:type}> = new EventEmitter();$3
+    """
   'Import Statement':
     'prefix': 'ng2-import'
     'description': 'Imports a Module from another file'

@@ -10,15 +10,17 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 |snippet|explanation|
 |-------|-----------|
-|[ng2-bootstrap](#ng2-bootstrap)          |Angular 2 bootstraping, for main.ts|
-|[ng2-component](#ng2-component)          |Angular 2 component|
-|[ng2-directive](#ng2-directive)          |Angular 2 directive|
-|[ng2-pipe](#ng2-pipe)                    |Angular 2 pipe|
-|[ng2-routes](#ng2-routes)                |Angular 2 @Routes|
-|[ng2-route-path](#ng2-route-path)        |Angular 2 routing path|
-|[ng2-service](#ng2-service)              |Angular 2 service|
-|[ng2-subscribe](#ng2-subscribe)          |Angular 2 observable|
-|[ng2-rx-map](#ng2-rx-map)                |RxJs map-operator gets imported|
+|[ng2-bootstrap](#ng2-bootstrap)          |bootstrap a module|
+|[ng2-component](#ng2-component)          |create a component|
+|[ng2-input](#ng2-input)                  |create an input property|
+|[ng2-output](#ng2-output)                |create an output event|
+|[ng2-directive](#ng2-directive)          |create a directive|
+|[ng2-pipe](#ng2-pipe)                    |create a pipe|
+|[ng2-routes](#ng2-routes)                |setup routes|
+|[ng2-route-path](#ng2-route-path)        |confiigure single|
+|[ng2-service](#ng2-service)              |create a  service|
+|[ng2-subscribe](#ng2-subscribe)          |subscribe to an observable|
+|[ng2-rx-map](#ng2-rx-map)                |import map-operator |
 
 ### HTML Snippets
 
@@ -77,6 +79,22 @@ export class <ComponentName>Component implements OnInit {
 
   ngOnInit() {}
 }
+```
+
+### ng2-input
+
+`ng2-input` is a handy snippet to add an input property to a component class.
+
+```ts
+@Input() <peroperty>: <type>;
+```
+
+### ng2-output
+
+`ng2-output`generates a output event in a component class.
+
+```ts
+@Output() <event>: EventEmitter<type> = new EventEmitter();
 ```
 
 ### ng2-import
