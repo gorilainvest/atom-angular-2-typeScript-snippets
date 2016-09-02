@@ -7,7 +7,6 @@
     import { Component, OnInit } from '@angular/core';
 
     @Component({
-      moduleId: module.id,
       selector: '${1:selector}',
       templateUrl: '${2:component-name}.component.html',
     })
@@ -100,11 +99,11 @@
     """
   'Angular Bootstrapping':
     'prefix': 'ng2-bootstrap'
-    'description': 'Angular bootstrap() snippet'
+    'description': 'Angular bootstraps() snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/platform-browser-dynamic/index/bootstrap-function.html'
     'body': """
     import { enableProdMode } from '@angular/core';
-    import { bootstrap } from '@angular/platform-browser-dynamic';
+    import { bootstraps } from '@angular/platform-browser-dynamic';
 
     import { ${1:AppComponent} } from './${2:name}.component';
 
@@ -125,7 +124,6 @@
     import 'rxjs/Rx'; // load the full rxjs
 
     @Component({
-      moduleId: module.id,
       selector: '${1:selector}',
       templateUrl: '${2:component-name}.component.html',
       directives: [ROUTER_DIRECTIVES],
