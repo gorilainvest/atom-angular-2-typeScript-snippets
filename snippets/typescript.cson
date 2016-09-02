@@ -68,9 +68,15 @@
     'description': 'Angular 2 route config snippet'
     'descriptionMoreURL': 'https://angular.io/docs/ts/latest/api/router/Route-class.html'
     'body': """
-    @Routes([
-      { path: '/${1:path}', component: ${2:component} }$3
-    ])
+     import { RouterModule, Routes } from '@angular/router';
+
+     const app_routes: Routes = [
+       { path: '${1:routePath}', component: ${2:Component} },
+       { path: '**', pathMatch: 'full', redirectTo: '$1' }
+     ];
+
+     export const app_routing = RouterModule.forRoot(app_routes);
+     $3
     """
   'Angular Route Definition':
     'prefix': 'ng2-route-path'

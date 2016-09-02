@@ -120,9 +120,14 @@ export class <PipeName>Pipe implements PipeTransform {
 `ng2-routes` creates the `@Routes` decorator with a single route in it.
 
 ```ts
-@Routes([
-  { path: '/<route>', component: <component-name> }
-])
+import { RouterModule, Routes } from '@angular/router';
+
+const app_routes: Routes = [
+  { path: '<url-segment>', component: <component-name> },
+  { path: '**', pathMatch: 'full', redirectTo: '<url-segment>' }
+];
+
+export const app_routing = RouterModule.forRoot(app_routes);
 ```
 
 ### ng2-route-path
