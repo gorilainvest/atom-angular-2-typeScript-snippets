@@ -1,3 +1,15 @@
+## 0.5.1
+
+- Adds snippet `ng2-input`
+  ```ts
+  @Input() <peroperty>: <type>;
+  ```
+- Adds snippet `ng2-output`
+  ```ts
+  @Output() <event>: EventEmitter<type> = new EventEmitter();
+  ```
+- Fixes bootstrap-snippet
+
 ## 0.4.6
 
 - Adds html snippet `ng2-property`
