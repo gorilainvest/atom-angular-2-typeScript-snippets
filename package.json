@@ -5,7 +5,7 @@
     "email": "gregor.woiwode@gmail.com",
     "url": "https://github.com/gregonnet"
   },
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Angular 2 TypeSctipt Snippets for Atom.",
   "keywords": [
     "angular2",
