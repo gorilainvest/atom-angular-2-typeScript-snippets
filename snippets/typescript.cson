@@ -16,6 +16,26 @@
       ngOnInit() {}
     }
     """
+
+  'Angular Module':
+    'prefix': 'ng2-module'
+    'description': 'Angular 2 module-snippet'
+    'descriptionMoreURL': 'https://angular.io/docs/ts/latest/guide/ngmodule.html'
+    'body': """
+    import { NgModule } from '@angular/core';
+
+    @NgModule({
+      imports: [$1],
+      declarations: [$2],
+      providers: [$3]
+    })
+    export class ${4:modulename} {
+      constructor() { $5 }
+
+      ngOnInit() {}
+    }
+    """
+  
   'Angular @Input':
     'prefix': 'ng2-input'
     'description': 'Angular 2 input snippet'
