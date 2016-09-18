@@ -75,7 +75,6 @@ import { NgModule } from '@angular/core';
   providers: [<Services>]
 })
 export class <ModuleName> { }
-
 ```
 
 ### ng2-component
