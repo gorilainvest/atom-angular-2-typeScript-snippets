@@ -1,3 +1,18 @@
+## 0.6.0
+
+- Adds snippet `ng2-module` (#1)
+
+  ```ts
+  import { NgModule } from '@angular/core';
+
+  @NgModule({
+    imports: [<Modules>],
+    declarations: [<Components>, <Directives>],
+    providers: [<Services>]
+  })
+  export class <ModuleName> { }
+  ```
+
 ## 0.5.1
 
 - Adds snippet `ng2-input`
