@@ -11,13 +11,14 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |snippet|explanation|
 |-------|-----------|
 |[ng2-bootstrap](#ng2-bootstrap)          |bootstrap a module|
+|[ng2-module](#ng2-module)                |create a module|
 |[ng2-component](#ng2-component)          |create a component|
 |[ng2-input](#ng2-input)                  |create an input property|
 |[ng2-output](#ng2-output)                |create an output event|
 |[ng2-directive](#ng2-directive)          |create a directive|
 |[ng2-pipe](#ng2-pipe)                    |create a pipe|
 |[ng2-routes](#ng2-routes)                |setup routes|
-|[ng2-route-path](#ng2-route-path)        |confiigure single|
+|[ng2-route-path](#ng2-route-path)        |configure single|
 |[ng2-service](#ng2-service)              |create a  service|
 |[ng2-subscribe](#ng2-subscribe)          |subscribe to an observable|
 |[ng2-rx-map](#ng2-rx-map)                |import map-operator |
@@ -59,6 +60,22 @@ import { <module-name> } from './<path-to-module>.module';
 
 //enableProdMode(); //Uncomment for production
 platformBrowserDynamic().bootstrapModule(<module-name>);
+```
+
+### ng2-module
+
+`ng2-module` provides a skeleton for an Angular 2 module.
+
+```ts
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  imports: [<Modules>],
+  declarations: [<Components>, <Directives>],
+  providers: [<Services>]
+})
+export class <ModuleName> { }
+
 ```
 
 ### ng2-component
