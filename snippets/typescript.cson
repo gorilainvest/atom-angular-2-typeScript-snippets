@@ -25,17 +25,14 @@
     import { NgModule } from '@angular/core';
 
     @NgModule({
-      imports: [$1],
-      declarations: [$2],
-      providers: [$3]
+      imports: [$2],
+      declarations: [$3],
+      providers: [$4]
     })
-    export class ${4:modulename} {
-      constructor() { $5 }
-
-      ngOnInit() {}
-    }
+    export class ${1:modulename} { }
+    $5
     """
-  
+
   'Angular @Input':
     'prefix': 'ng2-input'
     'description': 'Angular 2 input snippet'
