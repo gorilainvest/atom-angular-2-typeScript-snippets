@@ -1,3 +1,7 @@
+## 0.6.1
+
+- Fixes `ngFor` snipped
+
 ## 0.6.0
 
 - Adds snippet `ng2-module` (#1)
