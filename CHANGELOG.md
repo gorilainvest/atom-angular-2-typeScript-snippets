@@ -1,6 +1,10 @@
+## 0.6.3
+
+- Updates `ngSwitchWhen` to `ngSwitchCase`
+
 ## 0.6.2
 
-- Fixes `ngFor` snipped
+- Fixes `ngFor` snippet
 
 ## 0.6.0
 
